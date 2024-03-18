@@ -20,7 +20,7 @@ admin.initializeApp({
   databaseURL: "https://spellwork-a66fe-default-rtdb.firebaseio.com"
 });
 
-exports.handler = async (event, context) => {
+export default async  (event, context) => {
   try {
     const { userId } = event.queryStringParameters; // Extract userId from query parameters
 
